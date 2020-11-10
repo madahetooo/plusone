@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp"
+    tools:context=".tools.TemperatureConverterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature_converter_app"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_20sdp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3sdp"
+        android:background="@drawable/buttons_design"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tempconverter"
+        android:contentDescription="@string/temperature_converter_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_texts"
+            android:padding="@dimen/_10sdp"
+            android:hint="@string/fahrenheit"
+            android:inputType="numberDecimal"
+            android:id="@+id/et_Fahrenheit"
+            android:textColorHint="@color/colorAccent"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/convertarrow"
+            android:contentDescription="@string/converter_arrow"/>
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_texts"
+            android:padding="@dimen/_10sdp"
+            android:hint="@string/celsius"
+            android:textColorHint="@color/colorAccent"
+            android:inputType="numberDecimal"
+            android:id="@+id/et_Celsius"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+
+<Button
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/buttons_design"
+    android:text="@string/convert"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/_30sdp"
+    android:textColor="@color/whiteColor"
+    android:id="@+id/btn_convert"
+    android:onClick="convertDegree"/>
+
+    <Button
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons_design"
+        android:text="@string/reset"
+        android:layout_gravity="center"
+        android:textColor="@color/whiteColor"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:id="@+id/btn_reset"
+        android:onClick="resetValues"/>
+
+</LinearLayout>
+</ScrollView>

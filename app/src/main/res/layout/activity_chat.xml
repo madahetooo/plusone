@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/_10sdp"
+    tools:context=".entertainment.Chat">
+
+<!--    <ListView-->
+<!--        android:id="@+id/lv_chat"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@+id/et_Message"-->
+<!--        android:divider="@android:color/transparent"-->
+<!--        android:dividerHeight="16dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginBottom="@dimen/_10sdp" />-->
+<!--    -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messageRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/et_Message"/>
+
+    <EditText
+        android:id="@+id/et_Message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toStartOf="@+id/btn_sendMessage"
+        android:layout_toEndOf="@id/btn_addPhoto"
+        android:autofillHints=""
+        android:background="@drawable/edit_texts"
+        android:gravity="center"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:hint="@string/enter_your_message"
+        android:inputType="text"
+        android:padding="@dimen/_13sdp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_sendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/send_message"
+        android:src="@drawable/sendbutton" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_addPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/send_message"
+        android:src="@drawable/addphoto" />
+
+</RelativeLayout>

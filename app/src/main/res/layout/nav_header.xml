@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_userPhoto"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/nadal"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="@dimen/_3sdp"
+        app:riv_corner_radius="@dimen/_30sdp" />
+
+
+    <TextView
+        android:id="@+id/txFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/username"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:id="@+id/txEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/email_address"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_10sdp" />
+
+
+</LinearLayout>

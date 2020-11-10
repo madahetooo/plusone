@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="20dp"
+    tools:context=".entertainment.MediaActivity">
+
+    <Button
+        android:id="@+id/btn_MediaBuiltIn"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:background="@drawable/buttons_design"
+        android:text="@string/media_built_in" />
+
+    <Button
+        android:id="@+id/btn_ExoPlayer"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_MediaBuiltIn"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:background="@drawable/buttons_design"
+        android:text="@string/exoplayer" />
+
+</RelativeLayout>

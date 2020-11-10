@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/_20sdp"
+    tools:context=".tools.PassingBioData">
+
+    <ImageView
+        android:id="@+id/iv_nadal"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/nadal"
+        android:src="@drawable/nadal" />
+
+    <TextView
+        android:id="@+id/tx_nadal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_nadal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/rafael_nadal"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_20sdp" />
+
+    <ImageView
+        android:id="@+id/iv_novak"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_below="@id/tx_nadal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:contentDescription="@string/nadal"
+        android:src="@drawable/novak" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_novak"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/novak_djokovic"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_20sdp" />
+
+
+</RelativeLayout>

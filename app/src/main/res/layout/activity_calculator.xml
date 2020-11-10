@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp"
+    tools:context=".tools.CalculatorActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:src="@drawable/calculate_logo" />
+
+    <EditText
+        android:id="@+id/et_number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/edit_texts"
+        android:gravity="center"
+        android:hint="@string/enter_your_first_number"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/_10sdp"
+        android:textColorHint="@color/colorAccent" />
+
+
+    <EditText
+        android:id="@+id/et_number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/edit_texts"
+        android:gravity="center"
+        android:hint="@string/enter_your_second_number"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/_10sdp"
+        android:textColorHint="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/buttons_design"
+            android:gravity="center"
+            android:text="@string/plus"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/_15sdp" />
+
+        <Button
+            android:id="@+id/btn_sub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/buttons_design"
+            android:gravity="center"
+            android:text="@string/minus"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/_15sdp" />
+
+        <Button
+            android:id="@+id/btn_multiplication"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/buttons_design"
+            android:text="@string/multiplication"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/_10sdp" />
+
+        <Button
+            android:id="@+id/btn_division"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:background="@drawable/buttons_design"
+            android:gravity="center"
+            android:text="@string/division"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/_15sdp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:text="@string/result"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_20sdp" />
+
+</LinearLayout>

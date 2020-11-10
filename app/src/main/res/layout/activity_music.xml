@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/_20sdp"
+    tools:context=".entertainment.MusicActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_justin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:contentDescription="@string/justin_bieber"
+        android:src="@drawable/justin" />
+
+    <SeekBar
+        android:id="@+id/seekBarJustin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_justin"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <ImageView
+        android:id="@+id/iv_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarJustin"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="Pause"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:src="@drawable/pause" />
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarJustin"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="Play"
+        android:layout_toEndOf="@id/iv_pause"
+        android:src="@drawable/play" />
+
+    <ImageView
+        android:id="@+id/iv_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarJustin"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="Stop"
+        android:layout_toEndOf="@id/iv_play"
+        android:src="@drawable/stop" />
+
+
+</RelativeLayout>
